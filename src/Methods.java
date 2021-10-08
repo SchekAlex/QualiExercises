@@ -1,17 +1,14 @@
-import java.util.List;
+import java.util.*;
 
 public class Methods {
 //    Exercise 1:
-//    Define a function that receive a string as argument
-//    and prints it backwards. For example, the string "Automation"
-//    gets printed as : "noitamotuA"
     public void backwardsString(String word){
         char[] basicWord = word.toCharArray();
         for (int i=basicWord.length-1; i>=0; i--){
             System.out.print(basicWord[i]);
         }
     }
-
+//Exercise 2:
     public void printList(List<String> wordList){
         System.out.println();
         String firstWord = wordList.get(0);
@@ -32,7 +29,28 @@ public class Methods {
             System.out.print("* ");
 
         }
+        System.out.println();
     }
+//Exercise3:
+    public Set<Object> removeDuplicatesAndStrings(List<Object>list){
+            int length = list.size();
+            Set<Object> set = new HashSet();
+            for(int i=0; i<length;i++){
+                if(list.get(i) instanceof Number){
+                    set.add(list.get(i));
+                }
+            }
+            return set;
+    }
+//Exercise4:
+    public void dictionary(List<String> list) {
+
+    }
+//Exercise5:
+
+
+
+
 
 
 
