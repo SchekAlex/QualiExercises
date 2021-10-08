@@ -65,5 +65,7 @@ public class Main{
 
 
         System.out.println(method.dictionary(list2));
+
+
     }
 }
