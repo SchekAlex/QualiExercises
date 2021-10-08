@@ -13,22 +13,37 @@ public class Methods {
 //Exercise 2:
     public void printList(List<String> wordList){
         System.out.println();
+        String first = "* ";
+        String end = " *";
         String firstWord = wordList.get(0);
-        for(int i = 0; i<=firstWord.length()+2;i++){
-            System.out.print("* ");
+        int size = wordList.size();
+        int nr1Length = firstWord.length();
+        String nr1Word =firstWord;
+        for(int i = 1; i<size;i++){
+                String word = wordList.get(i);
+                if(nr1Length<word.length()){
+                    nr1Length = word.length();
+                    nr1Word = word;
+                }
         }
-
+        String str = first+ nr1Word+ end;
+        int length11  = str.length();
+        for(int i= 1;i<=length11;i++){
+            System.out.print("*");
+        }
         System.out.println();
-
-        int nrOfElements = wordList.size();
-        for(int i = 0; i<nrOfElements;i++){
-            System.out.print("* "+" "+ wordList.get(i)+" "+ " *");
+        for(int i=0;i<size;i++){
+            String word = wordList.get(i);
+            System.out.print("* "+word);
+            for(int j=1;j<=nr1Length-word.length();j++){
+                System.out.print(" ");
+            }
+            System.out.print(" *");
             System.out.println();
+
         }
-
-        for(int i = 0; i<=firstWord.length()+2;i++){
-            System.out.print("* ");
-
+        for(int i= 1;i<=length11;i++){
+            System.out.print("*");
         }
         System.out.println();
     }
