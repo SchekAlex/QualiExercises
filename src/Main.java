@@ -1,9 +1,6 @@
-import java.lang.reflect.Method;
-import java.sql.SQLOutput;
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
-import java.util.Set;
 
 public class Main{
     public static void main(String[] args) {
@@ -56,7 +53,17 @@ public class Main{
 
         System.out.println(method.removeDuplicatesAndStrings(list1));
 
+        List<String> list2 = new ArrayList<>();
+
+        String el1 = "Entry One.mp4";list2.add(el1);
+        String el2 = "Entry One.wav";list2.add(el2);
+        String el3 = "Entry Three.jpg";list2.add(el3);
+        String el4 = "Entry Four.mng";list2.add(el4);
+        String el5 = "Entry Five.png";list2.add(el5);
+        String el6 = "Entry Six.csv";list2.add(el6);
 
 
+
+        System.out.println(method.dictionary(list2));
     }
 }
