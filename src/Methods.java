@@ -73,30 +73,30 @@ public class Methods {
         return format;
     }
 
-//Exercise5:
-// presupunem ca totii incep de la varsta 0
-// fiecare iepure va naste un iepure o data pe an
-    public int rabBits(int n_years,int number_rabbits, int rabbits_births_number){
-        int rabbitYear =0;
-        int totalRabbits = number_rabbits;
-        for(int i=1;i<=n_years;i++)
-        {
-            if(rabbitYear ==0){
-                System.out.println(number_rabbits + "iepuri s-au nascut");
-            }
-
-            if(rabbitYear ==1){
-                System.out.println("Cei " + number_rabbits + " au implinit: "+ rabbitYear + " an");
-            }
-
-            if(rabbitYear>=2&& rabbitYear<4) {
-                totalRabbits += number_rabbits / 2;
-                rabbits_births_number -= number_rabbits / 2;
-            }
-
-        }
-        return totalRabbits;
-    }
+////Exercise5:
+//// presupunem ca totii incep de la varsta 0
+//// fiecare iepure va naste un iepure o data pe an
+//    public int rabBits(int n_years,int number_rabbits, int rabbits_births_number){
+//        int rabbitYear =0;
+//        int totalRabbits = number_rabbits;
+//        for(int i=1;i<=n_years;i++)
+//        {
+//            if(rabbitYear ==0){
+//                System.out.println(number_rabbits + "iepuri s-au nascut");
+//            }
+//
+//            if(rabbitYear ==1){
+//                System.out.println("Cei " + number_rabbits + " au implinit: "+ rabbitYear + " an");
+//            }
+//
+//            if(rabbitYear>=2&& rabbitYear<4) {
+//                totalRabbits += number_rabbits / 2;
+//                rabbits_births_number -= number_rabbits / 2;
+//            }
+//
+//        }
+//        return totalRabbits;
+//    }
 
 
 
